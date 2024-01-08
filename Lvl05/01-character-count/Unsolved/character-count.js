@@ -3,9 +3,7 @@
 var characterCount = function (str) {
 	const charMap = {};
 
-	for (i = 0; i < str.length; i++) {
-		const char = str[i];
-
+	for (const char of str) {
 		if (char in charMap) {
 			charMap[char]++;
 		} else {
